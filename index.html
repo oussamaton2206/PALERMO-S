@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PALERMO'S</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <script src="https://kit.fontawesome.com/346aea607c.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+    <header id="header">
+        <div class="navbar-container">
+            <nav>
+                <div class="logo">
+                    <h1 id="logoTitle">
+                        PALERMO'<span>S</span>
+                    </h1>
+                </div>
+                <div class="links" id="links">
+                    <ul>
+                        <li><i class="fa-solid fa-xmark closeBtn" id="closeBtn"></i></li>
+                        <li><a href="#home" class="link-item" id="link">Acceuile</a></li>
+                        <li><a href="#menu" class="link-item" id="link">Menu</a></li>
+                        <li><a href="#reviews" class="link-item" id="link">Reviews</a></li>
+                        <li><a href="#location" class="link-item" id="link">Localisation</a></li>
+                        <li><a href="#contact" class="link-item" id="link">Contactez-nous</a></li>
+                        
+                        <li>
+                            <button class="btn1" id="darkMode">
+                                <a class="plusBtn link-item" id="link" href="#more">Plus</a>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menuBtn" id="menuBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+        <div class="progressBar"></div>
+
+    </header>
+
+    
+
+    <main>
+
+        
+        
+        <section class="home" id="home">
+            <div class="homeContent">
+                <h1 class="homeTitle showFromLeft">
+                    Apprécier votre <br> fast <span>FOOD</span>
+                </h1>
+                <p class="showFromLeft">Nous somme là pour vous servire les plats les plus délicieux</p>
+                <button class="exploreBtn showFromLeft"><a class="plusBtn" href="#more">Découvrire</a></button>
+                <div class="socialMedia showFromLeft">
+                    <a href="https://www.instagram.com/pal_ermos?igsh=Nmh5c2pvNmJ5bnps" target="_blank" class="sm"><img width="25" height="25" src="https://img.icons8.com/ios/50/instagram-new--v1.png" alt="instagram-new--v1"/></a>
+                    <a href="#" class="sm"><img width="25" height="25" src="https://img.icons8.com/ios/50/facebook-new--v1.png" alt="facebook-new--v1"/></a>
+                    <a href="#" class="sm"><img width="25" height="25" src="https://img.icons8.com/ios/100/whatsapp--v1.png" alt="whatsapp--v1"/></a>
+                </div>
+            </div>
+            <div class="homeGraphics">
+                <img src="home img.png" class="homeImg showFromRight" alt="">
+            </div>
+        </section>
+
+
+        <section class="pres" id="more">
+            <p class="showFromLeft">NOTRE SERVICE</p>
+            <h1 class="showFromRight">Comment Ça Marche ?</h1>
+            
+            <div class="offers">
+                <div class="offer showFromLeft">
+                    <img src="livraison2.jpeg" alt="" class="liv">
+                    <h3>Facile À Commander</h3>
+                    <p class="offer-desc">Appelez seulement le numèro suivant, et commandez ce que vous voulez: 0634018030.</p>
+                </div>
+                <div class="offer showFromLeft">
+                    <img src="livraison3-removebg-preview.png" alt="" class="liv">
+                    <h3>Livraison Rapide</h3>
+                    <p class="offer-desc">L'une des livraisons les plus rapides au Maroc.</p>
+                </div>
+                <div class="offer showFromLeft">
+                    <img src="food.jpg" alt="" class="liv">
+                    <h3>La Meilleure Qualité</h3>
+                    <p class="offer-desc">De très bons repats : propre, delcieux...</p>
+                </div>
+                <div class="offer showFromLeft">
+                    <img src="prix.png" alt="" class="liv">
+                    <h3>Exellents Prix</h3>
+                    <p class="offer-desc">Des bons repas avec des prix convenables.</p>
+                </div>
+            </div>
+    
+    
+        </section>
+        
+        <section class="ourMenu" id="menu">
+            <div class="menuTitles">
+                <p class="menuParagraph showFromLeft">
+                    Notre menu
+                </p>
+                <h1 class="showFromRight">
+                    Le Plus Populaire
+                </h1>
+            </div>
+
+            <div class="paginationBtns showFromLeft">
+                <button class="paginationBtn" id="pizzaMenu" onclick="pizzaMenu()">🍕 pizza</button>
+                <button class="paginationBtn" id="panzarotiMenu" onclick="panzarotiMenu()"> <img src="panzarotti.png" width="15" alt="">panzaroti</button>
+                <button class="paginationBtn" id="mqilaMenu" onclick="mqilaMenu()">🍳 mqila</button>
+                <button class="paginationBtn" id="poutinMenu" onclick="poutinMenu()">🍟 poutine</button>
+                <button class="paginationBtn" id="pastichioMenu" onclick="pastichioMenu()">🍝 pastichio</button>
+                <button class="paginationBtn" id="shawarmaMenu" onclick="shawarmaMenu()">🌯
+                    shawarma</button>
+                <button class="paginationBtn" id="tacosMenu" onclick="tacosMenu()">🌮 tacos</button>
+                <button class="paginationBtn" id="sandwichesMenu" onclick="sandwichesMenu()">🥪 sandwiches</button>
+                <button class="paginationBtn" id="jusMenu" onclick="jusMenu()">🍹 jus</button>
+                <button class="paginationBtn" id="saladesMenu" onclick="saladesMenu()">🥗 salades</button>
+            </div>
+
+            <div class="pizzaSection showFromRight" id="pizzaItems">
+
+                <h1>Pizza</h1>
+
+                <div class="mealContainer">
+
+
+                    <div class="meal showFromRight">
+                        <img src="pizza.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                         Margharita
+                        </h2>
+                        <p class="price">
+                            <span class="size">M</span> 25DH | <span class="size">G</span> 35DH
+                        </p>
+                    </div>
+
+                    <div class="meal showFromRight">
+                        <img src="pizza.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            AL THONNELLE 
+
+                        </h2>
+                        <p class="price">
+                            <span class="size">M</span> 30DH | <span class="size">G</span> 45DH
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="pizza.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            VÉGÉTARIENNE 
+                        </h2>
+                        <p class="price">
+                            <span class="size">M</span> 30DH | <span class="size">G</span> 40DH
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="pizza.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            CHARCUTRIE  
+                        </h2>
+                        <p class="price">
+                            <span class="size">M</span> 35DH | <span class="size">G</span> 50DH
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="pizza.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            ORIENTAL 
+                        </h2>
+                        <p class="price">
+                            <span class="size">M</span> 35DH | <span class="size">G</span> 48DH
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="pizza.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            MISTA
+                        </h2>
+                        <p class="price">
+                            <span class="size">M</span> 35DH | <span class="size">G</span> 48DH
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="pizza.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            FRUITS DE MER
+                        </h2>
+                        <p class="price">
+                            <span class="size">M</span> 42DH | <span class="size">G</span> 60DH
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="pizza.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            QUATRE SAISONS
+                        </h2>
+                        <p class="price">
+                            <span class="size">M</span> 45DH | <span class="size">G</span> 62DH
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="pizza.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            PALERMO'S
+                        </h2>
+                        <p class="price">
+                            <span class="size">M</span> 50DH | <span class="size">G</span> 75DH
+                        </p>
+                    </div>
+
+
+                    
+                </div>
+              
+            </div>
+            
+            <div class="panzarotiSection" id="panzarotiItems">
+
+                <h1>Panzaroti</h1>
+
+                <div class="mealContainer">
+                    <div class="meal showFromRight">
+                        <img src="panzarotti.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            VIANDE HACHEE
+                        </h2>
+                        <p class="price">
+                             40DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="panzarotti.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            FRUITS DE MER
+                        </h2>
+                        <p class="price">
+                             45DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="panzarotti.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            DINDE
+                        </h2>
+                        <p class="price">
+                             40DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="panzarotti.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            MIXTE
+                        </h2>
+                        <p class="price">
+                             42DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="panzarotti.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            TENDERS
+                        </h2>
+                        <p class="price">
+                             45DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="panzarotti.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            ISTANBUL
+                        </h2>
+                        <p class="price">
+                             42DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="panzarotti.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            PALERMO'S
+                        </h2>
+                        <p class="price">
+                             55DH 
+                        </p>
+                    </div>
+                    
+                    
+                </div>
+              
+            </div>
+
+            <div class="mqilaSection" id="mqilaItems">
+
+                <h1>Mqila</h1>
+
+                <div class="mealContainer">
+                    <div class="meal showFromRight">
+                        <img src="mqila.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            VIANDE HACHEE
+                        </h2>
+                        <p class="price">
+                             32DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="mqila.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            DINDE
+                        </h2>
+                        <p class="price">
+                             30DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="mqila.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            FRUITS DE MER
+                        </h2>
+                        <p class="price">
+                             40DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="mqila.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            MIXTE
+                        </h2>
+                        <p class="price">
+                             38DH 
+                        </p>
+                    </div>
+                </div>
+              
+            </div>
+
+            <div class="poutinSection" id="poutinsItems">
+
+                <h1>Poutins</h1>
+
+                <div class="mealContainer">
+                    <div class="meal showFromRight">
+                        <img src="poutine.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            VIANDE HACHEE
+                        </h2>
+                        <p class="price">
+                             32DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="poutine.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            DINDE
+                        </h2>
+                        <p class="price">
+                             30DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="poutine.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            NUGGETTS
+                        </h2>
+                        <p class="price">
+                             30DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="poutine.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            TENDERS
+                        </h2>
+                        <p class="price">
+                             33DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="poutine.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            MIXTE
+                        </h2>
+                        <p class="price">
+                             35DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="poutine.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            FRUITS DE MER
+                        </h2>
+                        <p class="price">
+                             35DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="poutine.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            ISTANBUL
+                        </h2>
+                        <p class="price">
+                             33DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="poutine.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            PALERMO'S
+                        </h2>
+                        <p class="price">
+                             40DH 
+                        </p>
+                    </div>
+                </div>
+              
+            </div>
+
+            <div class="pastichioSection" id="pastichioItems">
+
+                <h1>Pastichio</h1>
+
+                <div class="mealContainer">
+                    <div class="meal showFromRight">
+                        <img src="pastichio.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            DINDE
+                        </h2>
+                        <p class="price">
+                             35DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="pastichio.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            VIANDE HACHEE
+                        </h2>
+                        <p class="price">
+                             35DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="pastichio.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            NUGGETTS
+                        </h2>
+                        <p class="price">
+                             32DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="pastichio.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            TENDERS
+                        </h2>
+                        <p class="price">
+                             35DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="pastichio.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            FRUITS DE MER
+                        </h2>
+                        <p class="price">
+                             38DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="pastichio.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            MIXTE
+                        </h2>
+                        <p class="price">
+                             35DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="pastichio.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            ISTANBUL
+                        </h2>
+                        <p class="price">
+                             37DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="pastichio.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            PALERMO'S
+                        </h2>
+                        <p class="price">
+                             42DH 
+                        </p>
+                    </div>
+                </div>
+              
+            </div>
+
+            <div class="shawarmaSection" id="shawarmaItems">
+
+                <h1>Shawarma</h1>
+
+                <div class="mealContainer">
+                    <div class="meal showFromRight">
+                        <img src="shawarma.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            ISRANBUL SIMPLE
+                        </h2>
+                        <p class="price">
+                             25DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="shawarma.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            ISTANBUL DOUBLE
+                        </h2>
+                        <p class="price">
+                             30DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="shawarma.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            ISTANBUL PAIN
+                        </h2>
+                        <p class="price">
+                             38DH 
+                        </p>
+                    </div>
+                </div>
+              
+            </div>
+
+            <div class="tacosSection" id="tacosItems">
+
+                <h1>Tacos</h1>
+
+                <div class="mealContainer">
+                    <div class="meal showFromRight">
+                        <img src="tacos.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            KABABE
+                        </h2>
+                        <p class="price">
+                            <span class="size">L</span> 30DH <span style="color:#ffa200; font-size: 1.5rem;">|</span> <span class="size">XL</span> 40DH
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="tacos.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            FRUITS DE MER
+                        </h2>
+                        <p class="price">
+                            <span class="size">L</span> 35DH <span style="color:#ffa200; font-size: 1.5rem;">|</span> <span class="size">XL</span> 50DH
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="tacos.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            MIXTE
+                        </h2>
+                        <p class="price">
+                            <span class="size">L</span> 35DH <span style="color:#ffa200; font-size: 1.5rem;">|</span> <span class="size">XL</span> 45DH
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="tacos.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            TENDERS
+                        </h2>
+                        <p class="price">
+                            <span class="size">L</span> 33DH <span style="color:#ffa200; font-size: 1.5rem;">|</span> <span class="size">XL</span> 45DH
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="tacos.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            PALERMO'S
+                        </h2>
+                        <p class="price">
+                            <span class="size">L</span> 40DH <span style="color:#ffa200; font-size: 1.5rem;">|</span> <span class="size">XL</span> 55DH
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="tacos.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            DINDE
+                        </h2>
+                        <p class="price">
+                            <span class="size">L</span> 30DH <span style="color:#ffa200; font-size: 1.5rem;">|</span> <span class="size">XL</span> 38DH
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="tacos.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            VIANDE HACHEE
+                        </h2>
+                        <p class="price">
+                            <span class="size">L</span> 30DH <span style="color:#ffa200; font-size: 1.5rem;">|</span> <span class="size">XL</span> 40DH
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="tacos.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            NUGGETTS
+                        </h2>
+                        <p class="price">
+                            <span class="size">L</span> 30DH <span style="color:#ffa200; font-size: 1.5rem;">|</span> <span class="size">XL</span> 40DH
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="tacos.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            CORDONS BLEU
+                        </h2>
+                        <p class="price">
+                            <span class="size">L</span> 33DH <span style="color:#ffa200; font-size: 1.5rem;">|</span> <span class="size">XL</span> 43DH
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="tacos.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            ISTANBUL
+                        </h2>
+                        <p class="price">
+                            <span class="size">L</span> 32DH <span style="color:#ffa200; font-size: 1.5rem;">|</span> <span class="size">XL</span> 42DH
+                        </p>
+                    </div>
+                </div>
+              
+            </div>
+
+            <div class="sandwitchesSection" id="sandwitchesItems">
+
+                <h1>Sandwitches</h1>
+
+                <div class="mealContainer">
+                    <div class="meal showFromRight">
+                        <img src="sandwish.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            STEAK VIANDE
+                        </h2>
+                        <p class="price">
+                             35DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="sandwish.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            FRUITS DE MER
+                        </h2>
+                        <p class="price">
+                             40DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="sandwish.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            CORDONS BLEU
+                        </h2>
+                        <p class="price">
+                             38DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="sandwish.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            NUGGETTS
+                        </h2>
+                        <p class="price">
+                             32DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="sandwish.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            TENDERS
+                        </h2>
+                        <p class="price">
+                             38DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="sandwish.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            ISTANBUL
+                        </h2>
+                        <p class="price">
+                             38DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="sandwish.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            DINDE
+                        </h2>
+                        <p class="price">
+                             35DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="sandwish.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            MIXTE
+                        </h2>
+                        <p class="price">
+                            40DH
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="sandwish.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            PALERMO'S
+                        </h2>
+                        <p class="price">
+                             45DH 
+                        </p>
+                    </div>
+
+                </div>
+                <H2 style="text-align: center; font-weight: bold; text-align: center; margin: 3rem 0;">Avec pain fait maison</H2>
+                <div class="mealContainer">
+                    <div class="meal showFromRight">
+                        <img src="sandwish.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            VIANDE HACHEE
+                        </h2>
+                        <p class="price">
+                             32DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="sandwish.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            FRUITS DE MER
+                        </h2>
+                        <p class="price">
+                             35DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="sandwish.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            CORDONS BLEU
+                        </h2>
+                        <p class="price">
+                             38DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="sandwish.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            NUGGETTS
+                        </h2>
+                        <p class="price">
+                             32DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="sandwish.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            TENDERS
+                        </h2>
+                        <p class="price">
+                             35DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="sandwish.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            ISTANBUL
+                        </h2>
+                        <p class="price">
+                             32DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="sandwish.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            DINDE
+                        </h2>
+                        <p class="price">
+                             30DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="sandwish.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            MIXTE
+                        </h2>
+                        <p class="price">
+                            35DH
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="sandwish.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            PALERMO'S
+                        </h2>
+                        <p class="price">
+                             42DH 
+                        </p>
+                    </div>
+                </div>
+              
+            </div>
+
+            <div class="jusSection" id="jusItems">
+
+                <h1>Jus</h1>
+
+                <div class="mealContainer">
+                    <div class="meal showFromRight">
+                        <img src="water.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            L'EAU 50CL
+                        </h2>
+                        <p class="price">
+                             05DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="soda.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            LIMONADE 
+                        </h2>
+                        <p class="price">
+                             07DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="soda.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            LIMONADE SPECIALE
+                        </h2>
+                        <p class="price">
+                             13DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="orange.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            JUS D'ORANGE
+                        </h2>
+                        <p class="price">
+                             10DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="lemon.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            JUS DE CITRON
+                        </h2>
+                        <p class="price">
+                             10DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="lg.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            CITRON ET GINGEMBRE
+                        </h2>
+                        <p class="price">
+                             13DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="banana.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            JUS DE BANANE
+                        </h2>
+                        <p class="price">
+                             12DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="avocado.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            JUS D'AVOCAT
+                        </h2>
+                        <p class="price">
+                             15DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="avocado.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            AVEC FRUIT SEC
+                        </h2>
+                        <p class="price">
+                             20DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="coktaile.png" width="200" class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            COCKTAIL FRUIT
+                        </h2>
+                        <p class="price">
+                             15DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="za3za3.png" width="200"  class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            ZA3ZA3
+                        </h2>
+                        <p class="price">
+                             25DH 
+                        </p>
+                    </div>
+                </div>
+              
+            </div>
+
+            <div class="saladesSection" id="saladesItems">
+
+
+                <h1>Salades</h1>
+
+                <div class="mealContainer">
+                    <div class="meal showFromRight">
+                        <img src="salade.png" width="200"  class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            VARIEE
+                        </h2>
+                        <p class="price">
+                             28DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="salade.png" width="200"  class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            AVOCAT CREVETTE
+                        </h2>
+                        <p class="price">
+                             35DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="salade.png" width="200"  class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            MINUTE
+                        </h2>
+                        <p class="price">
+                             30DH 
+                        </p>
+                    </div>
+                    <div class="meal showFromRight">
+                        <img src="salade.png" width="200"  class="mealImg" alt="">
+                        <h2 class="mealTitle">
+                            PALERMO'S
+                        </h2>
+                        <p class="price">
+                             42DH 
+                        </p>
+                    </div>
+                </div>
+              
+            </div>
+
+        </section>
+
+        <section class="avis" id="reviews">
+            <h1 class="reviewTitle showFromLeft">Les avis De Nos Clients</h1>
+            <div class="avis-container">
+                <div class="avi showFromRight">
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>"Aujourd'hui nous avons mangé chez eux ; c'était bon et propre, l'accueil était très sympa,un service de qualité ,Tout est parfait, accueil chaleureux, des plats irrésistibles à goût très très bon . Je recommande vivement ce restaurant"</p>
+                    <p>- Momo Mido</p>
+                </div>
+                <div class="avi showFromRight">
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>"Excellent Snack, service au top, de très bons plats très bien cuisinés avec des produits de qualité et un rapport qualité prix incroyable en comparaison avec d’autres snacks.
+                        Je recommande sans hésiter"</p>
+                    <p>- Ayoub Akhloufi</p>
+                </div>
+                <div class="avi showFromRight">  
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>"Cuisine : 5 étoiles | Service : 4 étoiles | Ambiance : 5 étoiles"</p>
+                    <p>- Omar Boussaidi</p>
+                </div>
+                <div class="avi showFromRight">
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>"Cuisine : 5 étoiles | Service : 5 étoiles | Ambiance : 5 étoiles | 
+                        plats recommandés : Dinde, Brochette Dinde et Sandwich Mixte"</p>
+                    <p>- Mounia Elmizari</p>
+                </div>
+                <div class="avi showFromRight">
+                    <p>⭐⭐⭐⭐</p>
+                    <p>"Cuisine : 4 étoiles | Service : 3 étoiles | Ambiance : 3 étoiles"</p>
+                    <p>- Walid Hadd</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="locationPage" id="location">
+            <h1 class="locationPageTitle showFromLeft">La Localisation</h1>
+            <div class="locationBox">
+               <div class="side1">
+                <div class="textContent">
+                    <p>Où pouvez-vous trouvez nous 
+                        ?  </p>
+                    <h1>votre  <span style="color: #ffa200;">Palermo's</span> <br> est là</h1>
+                </div>
+                <div class="cordintates">
+                    <p><span style="font-weight: bold;">Adresse:</span>  M4V7+2MH, Oujda</p>
+                    <p><span style="font-weight: bold;">Lien google maps:</span> <a href="https://maps.app.goo.gl/GETDS8hFZUH9LPbh8">https://maps.app.goo.gl/GETDS8hFZUH9LPbh8</a></p>
+                    <p><span style="font-weight: bold;">Téléphone : </span>  0634-018030</p>
+                </div>
+               </div>
+               <div class="side2">
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.2024416929885!2d-1.8883258884313132!3d34.69262618353267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd78639da3dc3797%3A0x1513af5d4d0db9dc!2sPalermo%E2%80%99s%20%3A%20Snack%20%26%20Pizzeria!5e1!3m2!1sfr!2sma!4v1743432202716!5m2!1sfr!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer id="contact">
+        <div class="infos">
+            <div class="social showFromLeft">
+                <h1 class="">
+                    Follow Us<span style="color: black;">.</span>
+                </h1>
+                <p>
+                    Abonnez vous sur nos compte sociale 
+                </p>
+                <div class="socialAccounts">
+                    <a href="https://www.instagram.com/pal_ermos?igsh=Nmh5c2pvNmJ5bnps" target="_blank" class="sm"><img width="20" height="20" src="https://img.icons8.com/ios/50/instagram-new--v1.png" alt="instagram-new--v1"/></a>
+                    <a href="#" class="sm"><img width="20" height="20" src="https://img.icons8.com/ios/50/facebook-new--v1.png" alt="facebook-new--v1"/></a>
+                    <a href="#" class="sm"><img width="20" height="20" src="https://img.icons8.com/ios/100/whatsapp--v1.png" alt="whatsapp--v1"/></a>
+                </div>
+            </div>
+            <div class="contact showFromRight">
+                <h1>
+                    Contactez Nous
+                </h1>
+                <p>
+                    0634-018030 <br>
+                    M4V7+2MH, Oujda
+                </p>
+            </div>
+        </div>
+        <div class="copyright showFromLeft">
+            <p style="font-weight: normal;">Copyright © 2025 <span style="color: #ffa200; font-weight: bold; cursor: pointer;">palermosoujda.com</span>, All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

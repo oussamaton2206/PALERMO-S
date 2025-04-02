@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primary-color: #ffa200;
+    --white-color: #fff;
+    --black-color: #000;
+
+    --1-fs: 1rem;
+    --2-fs: 2rem;
+    --3-fs: 3rem;
+    --4-fs: 4rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Exo 2", sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: clip;
+}
+
+header {
+    padding: 5px 0 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--white-color); 
+    z-index: 10; 
+    box-shadow: 0 2px 5px rgba(85, 84, 84, 0.1);
+}   
+.progressBar{
+    margin: 0.5rem 0;
+    width: 0;
+    height: 7px;
+    background: linear-gradient(90deg,#ffee02,#ffa200,#ff5100);
+    background-size: 300% 300%;
+    z-index: 200;
+    animation: glowing 3s linear infinite;
+}
+@keyframes glowing {
+    0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+}
+
+.navbar-container nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo{
+    font-size: 1.5rem;
+}
+.logo span{
+    color: var(--primary-color);
+}
+.links ul{
+    display: flex;
+    column-gap: 2rem;
+}
+.links ul li{
+    list-style: none;
+}
+.links ul li a:not(.plusBtn){
+    text-decoration: none;
+    color: black;
+}
+.links ul li a:hover:not(.plusBtn){
+    color: var(--primary-color);
+}
+.plusBtn{
+    text-decoration: none;
+    color: white;
+}
+.btn1{
+    background: var(--primary-color);
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: none;
+    transition: 0.5s ease;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+.btn1:hover{
+    opacity: 0.7;
+    transform: translateY(-10%);
+}
+.darkIcon{
+    color: var(--white-color);
+}
+.menuBtn{
+    cursor: pointer;
+    display: none;
+}
+.closeBtn{
+    display: none;
+    cursor: pointer;
+    color: white;
+
+}
+
+
+.homeImg{
+    width: 400px;
+    transition: 0.5s ease;
+}
+section{
+    padding: 2rem;
+}
+.home{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+    height: 100dvh;
+}
+.homeTitle{
+    font-size: var(--4-fs);
+}
+
+.homeTitle span{
+    color: var(--primary-color);
+}
+.homeContent {
+    transition: 0.5s ease;
+}
+.homeContent p{
+    width: 60%;
+}
+.homeContent button{
+    background: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    transition: 0.5s ease;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    margin: 1rem 0;
+}
+.homeContent button:hover{
+    opacity: 0.7;
+    transform: translateY(-10%);
+}
+.socialMedia{
+    display: flex;
+    column-gap: 0.8rem;
+    margin: 10px 0;
+}
+.sm img{
+    transition: 0.5s ease;
+}
+.sm img:hover{
+    transform: translateY(-10%);
+}
+.ourMenu{
+    padding: 4% 0;
+}
+
+.ourMenu .menuParagraph{
+    color: var(--primary-color);
+    text-align: center;
+}
+.ourMenu h1{
+    font-size: var(--2-fs);
+    text-align: center;    
+}
+
+.paginationBtns{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 3rem 0 5rem;
+    text-transform: capitalize;
+}
+.paginationBtn{
+    padding: 8px 15px;
+    background: var(--white-color);
+    border-radius: 20px;
+    border: 2px solid black;
+    transition: 0.5s ease;
+    cursor: pointer;
+    color: black;
+    margin: 1rem 0;
+    text-transform: capitalize;
+}
+.paginationBtn:hover{
+    background: var(--black-color);
+    color: white;
+    transform: translateY(-10%);
+}
+.paginationBtn:active{
+    background: var(--black-color);
+    color: white;
+}
+
+.mealContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,300px);
+    place-items: center;
+    justify-content: center;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    margin: 2rem 0;
+    font-size: 0.8rem;
+
+}
+
+.mealContainer .meal{
+    box-shadow: 1px 1px 10px rgb(209, 204, 204);
+    text-align: center;
+    padding: 2rem;
+    transition: 0.5s ease;
+}
+.mealContainer .meal:hover{
+    transform: translateY(-2%);
+    background: radial-gradient(circle,#ffee02 20%,#ffa200 );
+    color: var(--white-color);
+}
+.meal{
+    border-radius: 10px;
+    display: grid;
+    row-gap: 0.5rem;
+}
+.meal img{
+    width: 250px;
+    height: 250px;
+}   
+.mealTitle{
+    font-size: 1rem;
+}
+
+#pizzaItems{
+    display: block;
+}
+#panzarotiItems{
+    display: none;
+}
+#mqilaItems{
+    display: none;
+}
+#poutinsItems{
+    display: none;
+}
+#pastichioItems{
+    display: none;
+}
+#shawarmaItems{
+    display: none;
+}
+#tacosItems{
+    display: none;
+}
+#sandwitchesItems{
+    display: none;
+}
+#jusItems{
+    display: none;
+}
+#saladesItems{
+    display: none;
+}
+
+.price{
+    color: #ff5100;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.size{
+    font-weight: bold;
+    color: black;
+    font-size: 0.8rem;
+}
+.locationPage .locationPageTitle{
+    font-size: var(--2-fs);
+    text-align: center; 
+    margin: 5rem 0;
+}
+
+.locationBox{
+    width: 95%;
+    height: auto;
+    padding: 6rem 4rem;
+    background: #fff2cd;
+    border-radius: 20px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    gap: 2rem;
+    transition: 0.5s ease;
+    
+}
+.textContent p{
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.textContent h1{
+    text-transform: capitalize;
+    font-size: var(--3-fs);
+}
+iframe{
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+footer{
+    margin: 4rem 0 0;
+    padding: 3rem;
+    
+    background: #fff2cd;
+}
+footer h1{
+    color: var(--primary-color);
+}
+footer p{
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.infos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 4rem;
+    
+}
+.socialAccounts{
+    margin: 1rem 0 0;
+}
+.copyright p{
+    margin: 4rem 0 0;
+    text-align: center;
+}
+
+.showFromLeft{
+    opacity: 0;
+    transition: all 1s;
+    transform: translateX(-100%);
+}
+.showLeftContent{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.showFromRight{
+    opacity: 0;
+    transition: all 1s;
+    transform: translateX(100%);
+}
+.showRightContent{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.pres{
+    padding: 10rem 0;
+    text-align: center;
+}
+
+.pres p{
+    color: #ffa200;
+    font-size: small;
+    
+    text-align: center;
+}
+.pres h1{
+    
+    text-align: center;
+    font-size: 3rem;
+    margin: 0 0 3rem 0;
+}
+
+.liv{
+    width: 70%;
+    height: 60%;
+    
+}
+.offer{
+    width: 22%;
+    height: 29%;
+    position: relative;
+}
+
+
+.offers .offer-desc{
+    color: rgb(172, 169, 169);
+    font-size: small;
+    text-align: justify;
+    text-align-last: center;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+
+
+.offers{
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.reviewTitle{
+    font-size: var(--2-fs);
+}
+
+
+.avis-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.avis {
+    text-align: center;
+    padding: 10rem 2rem;
+}
+
+
+.avi{
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(235, 231, 231);
+    transition: 0.5s ease;
+}
+.avi:hover{
+    transform: translateY(-5%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .homeTitle{
+        font-size: var(--3-fs);
+    }
+    .homeContent p{
+        font-size: 0.9rem;
+    }
+    .homeImg{
+        width: 300px;
+    }
+    .locationBox{
+    grid-template-columns: repeat(1,1fr);
+    }
+    iframe{
+        padding: 0;
+    }
+    .home{
+        height: auto;
+    }
+}
+@media screen and (max-width: 750px) {
+    .menuBtn{
+        display: block;
+        position: sticky;
+        right: 10px;
+    }
+    .links{
+        position: fixed;
+        background: var(--white-color);
+        width: 80%;
+        height: 100%;
+        top: 0;
+        right: -100%;
+        box-shadow: 1px 1px 10px gray;
+        border-radius: 10px 0 0 10px;
+        padding: 3rem;
+        transition: 0.5s ease;
+        z-index: 20;
+    }
+    .links ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        text-align: center;
+    }
+    .show-menu{
+        right: 0;
+    }
+    .closeBtn{
+        display: block;
+        color: black;
+    }
+    .locationBox{
+        font-size: 1rem;
+    }
+    .locationBox p{
+        font-size: 0.8rem;
+    }
+    .locationBox h1{
+        font-size: 2.5rem;
+    }
+    .infos{
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+        font-size: 0.9rem;
+    }
+    .infos p{
+        font-size: 0.8rem;
+    }
+    .home{
+        padding: 3rem 0;
+    }
+    .homeContent{
+        order: 1;
+    }
+    .offers{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2rem;
+    }
+    .offer{
+        width: 60%;
+    }
+    .offer-desc{
+        width: 80%;
+        position: relative;
+        text-align: center;
+    }
+    .avis{
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 650px) {
+    .home{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 4rem;
+        text-align: center;
+    }
+    .homeContent p{
+        margin: 0 auto;
+    }
+    .socialMedia{
+        display: none;
+    }
+}
