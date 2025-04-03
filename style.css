@@ -380,7 +380,7 @@ footer p{
 .pres h1{
     
     text-align: center;
-    font-size: 3rem;
+    font-size: var(--2-fs);
     margin: 0 0 3rem 0;
 }
 
