@@ -1,3 +1,4 @@
+
 let menu = document.getElementById('links');
 let closeBtn = document.getElementById('closeBtn');
 let toggleBtn = document.getElementById('menuBtn');
@@ -212,6 +213,25 @@ window.addEventListener("scroll", function(){
     let percentage = (scrollOrigin / scrollHeight) * 100;
     document.querySelector(".progressBar").style.width = percentage + "%"
 })
+
+let offer1 = document.getElementById("item1");
+let offer2 = document.getElementById("item2");
+let offer3 = document.getElementById("item3");
+let noOfferBox = document.getElementById("noOfferBox")
+offer1.style.display = "none";
+offer2.style.display = "none";
+offer3.style.display = "none";
+noOfferBox.style.display = "block";
+let now = new Date();
+let day = now.getDay();
+console.log(day)
+
+if (day == 1 || day == 6){
+    offer1.style.display = "block"
+    offer2.style.display = "flex"
+    offer3.style.display = "flex"
+    noOfferBox.style.display = "none";
+}
 
 
 
