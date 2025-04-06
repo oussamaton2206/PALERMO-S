@@ -226,7 +226,7 @@ let now = new Date();
 let day = now.getDay();
 console.log(day)
 
-if (day == 1 || day == 6){
+if (day == 0 || day == 6){
     offer1.style.display = "block"
     offer2.style.display = "flex"
     offer3.style.display = "flex"
