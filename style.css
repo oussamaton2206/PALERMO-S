@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
@@ -444,19 +445,47 @@ footer p{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.offerSection{
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "item1 item2"
+    "item1 item3"
+    ;
+    gap: 1rem;
+}
+.items{
+    padding: 1rem;
+}
+.item1{
+    background: #ffa200;
+    grid-area: item1;
+}
+.item1 img{
+    max-width: 100%; 
+    height: auto;
+}
+.item2{
+    background: #ffee02;
+    grid-area: item2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3vw;
+}
+.item3{
+    background: #ff5100;
+    grid-area: item3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3vw;
+    color: white;
+}
 
 @media screen and (max-width: 1000px) {
     .homeTitle{
@@ -476,6 +505,45 @@ footer p{
     }
     .home{
         height: auto;
+    }
+    .menuBtn{
+        display: block;
+        position: sticky;
+        right: 10px;
+    }
+    .links{
+        position: fixed;
+        background: var(--white-color);
+        width: 80%;
+        height: 100%;
+        top: 0;
+        right: -100%;
+        box-shadow: 1px 1px 10px gray;
+        border-radius: 10px 0 0 10px;
+        padding: 3rem;
+        transition: 0.5s ease;
+        z-index: 20;
+    }
+    .links ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        text-align: center;
+    }
+    .show-menu{
+        right: 0;
+    }
+    .closeBtn{
+        display: block;
+        color: black;
+    }
+}
+@media screen and (max-width: 950px) {
+    .offerSection{
+        grid-template-areas: 
+        "item1 item1"
+        "item2 item3"
+        ;
     }
 }
 @media screen and (max-width: 750px) {
