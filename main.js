@@ -236,7 +236,7 @@ if (day == 0 || day == 6){
 
 
 //-----------------
-document.oncontextmenu = () => {
+/*document.oncontextmenu = () => {
     return false
 }
 document.onkeydown = e => {
@@ -247,3 +247,4 @@ document.onkeydown = e => {
         return false
     }
 }
+*/
